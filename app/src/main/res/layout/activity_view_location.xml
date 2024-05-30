@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:fillViewport="true"
+        tools:context=".activities.EditLocationActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#26A69A"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/location"
+                android:textAlignment="gravity"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_viewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="@string/title"
+                android:inputType="text"
+                android:paddingStart="10sp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                tools:ignore="RtlSymmetry,TextViewEdits" />
+
+            <TextView
+                android:id="@+id/text_viewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="clip_vertical"
+                android:paddingStart="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/location2"
+                android:textColor="#000000"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/text_viewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingStart="10sp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                tools:ignore="RtlSymmetry,TextViewEdits" />
+
+            <CheckBox
+                android:id="@+id/checkbox_viewReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:allowClickWhenDisabled="false"
+                android:buttonTint="#26A69A"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="sans-serif"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/reminder_set"
+                android:textColor="#000000" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/button_editLocation"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#26A69A"
+                android:enabled="true"
+                android:fontFamily="sans-serif"
+                android:onClick="onEdit"
+                android:text="@string/edit" />
+
+            <Button
+                android:id="@+id/button_deleteLocation"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#EF5350"
+                android:onClick="onDelete"
+                android:text="@string/delete" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

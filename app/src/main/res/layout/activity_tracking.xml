@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            tools:context=".activities.TrackingActivity">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#26A69A"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/tracker"
+                android:textAlignment="gravity"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_distanceTravelled"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="23dp"
+                android:background="#26A69A"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/total_distance_travelled"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_statistics"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/text_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="260dp"
+                android:text="@string/your_statistics"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:id="@+id/text_totalWalk"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="#191919"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/walking"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_distanceTravelled" />
+
+            <TextView
+                android:id="@+id/text_totalRun"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="#191919"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/running"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_totalWalk"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/text_totalCycled"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="#191919"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/cycling"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_totalRun"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/button_track"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#26A69A"
+                android:enabled="true"
+                android:onClick="onTrack"
+                android:text="@string/begin_tracking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radiogroup_activities" />
+
+            <TextView
+                android:id="@+id/text_setActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="268dp"
+                android:text="@string/track_activity"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_trackerInformation" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_activities"
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:background="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_setActivity">
+
+                <RadioButton
+                    android:id="@+id/radio_walking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#26A69A"
+                    android:buttonTintMode="multiply"
+                    android:text="@string/walking2"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radio_running"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#26A69A"
+                    android:buttonTintMode="multiply"
+                    android:text="@string/running2"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radio_cycling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#26A69A"
+                    android:buttonTintMode="multiply"
+                    android:text="@string/cycling2"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="23dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_track" />
+
+            <TextView
+                android:id="@+id/text_trackerInformation"
+                android:layout_width="372dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="23dp"
+                android:text="@string/trackerinfo"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="58dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_totalCycled" />
+
+            <Button
+                android:id="@+id/button_stop"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="#EF5350"
+                android:onClick="onStop"
+                android:text="@string/stop_tracking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radiogroup_activities" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

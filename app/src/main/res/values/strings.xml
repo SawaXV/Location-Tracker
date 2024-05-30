@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">cw2</string>
+    <string name="map_api">AIzaSyBeOcxieOVk8FDQft3VuEttSXBGqa0zvRE</string>
+    <string name="information">The GeoTracker app is a location tracking app that can save locations and track your location.\n\n
+        Saved Locations\n
+        You can set a location marker alongside a required title and optional description. You may also set a reminder so that if you are within 100 metres of the location,
+        you will be notified of the location. Locations can be edited and removed.\n\n
+        Tracker\n
+        Use this to track the total distance you have walked, ran or cycled. This must also be enabled so that you can be notified if you are within 100 metres of
+        locations that have a reminder set.\n\n
+    </string>
+    <string name="title">Title</string>
+    <string name="addr">Addr</string>
+    <string name="desc">Desc</string>
+    <string name="location">Location</string>
+    <string name="location2">Location:</string>
+    <string name="description">Description...</string>
+    <string name="reminder_set">Reminder set</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="tracker">Tracker</string>
+    <string name="total_distance_travelled">Total Distance Travelled:</string>
+    <string name="your_statistics">Your Statistics</string>
+    <string name="walking">Walking</string>
+    <string name="running">Running</string>
+    <string name="cycling">Cycling</string>
+    <string name="begin_tracking">Begin Tracking</string>
+    <string name="track_activity">Track Activity</string>
+    <string name="walking2">Walking</string>
+    <string name="running2">Running</string>
+    <string name="cycling2">Cycling</string>
+    <string name="trackerinfo">Set the GeoTracker to track your movements to provide you with data on your activities and to be reminded nearby locations. </string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="geotracker">GeoTracker</string>
+    <string name="saved_locations">Saved Locations</string>
+    <string name="tracker2">Tracker</string>
+    <string name="saved_locations2">Saved Locations</string>
+    <string name="addlocation">addLocation</string>
+    <string name="information2">Information</string>
+    <string name="location3">Location</string>
+    <string name="finding_location">Finding location...</string>
+    <string name="set_as_reminder">Set as reminder</string>
+    <string name="error">Please provide a title and location</string>
+    <string name="save">Save</string>
+</resources>
