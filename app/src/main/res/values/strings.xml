@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">cw2</string>
-    <string name="map_api">AIzaSyBeOcxieOVk8FDQft3VuEttSXBGqa0zvRE</string>
+    <string name="map_api">   [GOOGLE MAP API KEY HERE]    </string>
     <string name="information">The GeoTracker app is a location tracking app that can save locations and track your location.\n\n
         Saved Locations\n
         You can set a location marker alongside a required title and optional description. You may also set a reminder so that if you are within 100 metres of the location,
